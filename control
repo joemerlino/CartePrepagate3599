@@ -1,0 +1,9 @@
+Package: com.joemerlino.bancajessica
+Name: BancaJessica
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Giuseppe Merlino
+Author: Giuseppe Merlino
+Section: Tweaks
