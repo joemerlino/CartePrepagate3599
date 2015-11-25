@@ -8,7 +8,7 @@ static BOOL finish = NO;
 	return %orig;
 }
 - (BOOL)fileExistsAtPath:(NSString *)path isDirectory:(BOOL *)isDirectory{
- 	if(!finish && [path rangeOfString:@"/private/var/mobile/"].location == NSNotFound)
+ 	if(!finish && ([path rangeOfString:@"/var/mobile/Containers"].location == NSNotFound || [path rangeOfString:@"/var/mobile/Applications"].location == NSNotFound))
 		return NO;
  	return %orig;
 }
